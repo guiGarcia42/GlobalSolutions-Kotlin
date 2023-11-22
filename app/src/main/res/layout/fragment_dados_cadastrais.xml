@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dados_cadastrais.DadosCadastraisFragment">
+    tools:context=".ui.dados.DadosCadastraisFragment">
 
     <Button
-        android:id="@+id/delete_all_button"
+        android:id="@+id/next_button"
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:backgroundTint="#0030C0"
-        android:text="Salvar"
+        android:text="Próximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

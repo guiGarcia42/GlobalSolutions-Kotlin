@@ -12,14 +12,23 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.checkpoint3.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_dados_cadastrais"
+        android:name="com.example.checkpoint3.ui.dados.DadosCadastraisFragment"
+        android:label="@string/menu_dados_cadastrais"
+        tools:layout="@layout/fragment_dados_cadastrais" >
+        <action
+            android:id="@+id/action_nav_dados_cadastrais_to_dados_saude"
+            app:destination="@id/nav_dados_saude" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.checkpoint3.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_dados_saude"
+        android:name="com.example.checkpoint3.ui.dados.DadosSaudeFragment"
+        android:label="fragment_dados_saude"
+        tools:layout="@layout/fragment_dados_saude" />
 </navigation>

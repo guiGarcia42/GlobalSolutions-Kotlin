@@ -6,69 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hospital_list"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/item_name_input"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="Nome"
-                android:inputType="text" />
-
-            <EditText
-                android:id="@+id/item_name_input2"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="24dp"
-                android:hint="Sobrenome"
-                android:inputType="text" />
-
-            <EditText
-                android:id="@+id/item_name_input5"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="24dp"
-                android:hint="Email"
-                android:inputType="text" />
-
-            <EditText
-                android:id="@+id/item_name_input3"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="24dp"
-                android:hint="Celular"
-                android:inputType="text" />
-
-            <EditText
-                android:id="@+id/item_name_input4"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="24dp"
-                android:hint="RG"
-                android:inputType="text" />
-
-            <EditText
-                android:id="@+id/item_name_input6"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginTop="24dp"
-                android:hint="Data de nascimento"
-                android:inputType="text" />
-
-
-        </LinearLayout>
-    </ScrollView>
+            android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
