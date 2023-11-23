@@ -3,10 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#f9f9f9</color>
 
-<!--    <color name="green">#7ab540</color>-->
-<!--    <color name="green_2">#8cb567</color>-->
-<!--    <color name="green_gray">#9eb68f</color>-->
-<!--    <color name="gray">#b1b7b7</color>-->
+    <color name="green">#7ab540</color>
+    <color name="green_2">#8cb567</color>
+    <color name="green_gray">#9eb68f</color>
+    <color name="gray">#b1b7b7</color>
 
 
 </resources>

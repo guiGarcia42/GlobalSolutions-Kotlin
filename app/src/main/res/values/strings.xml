@@ -12,4 +12,13 @@
     <string name="menu_home">Home</string>
     <string name="menu_dados_cadastrais">Dados Cadastrais</string>
     <string name="menu_configuracao">Configuração</string>
+
+    <!-- Settings Strings -->
+
+    <string name="change_theme_text_title">Change themes</string>
+    <string name="change_theme_text_description">Press this button if you want to change the Theme</string>
+    <string name="button_change_theme_text">Change theme</string>
+    <string name="change_language_text_title">Change Languages</string>
+    <string name="change_language_text_description">Press this button if you want to change the Language</string>
+    <string name="button_change_language_text">Change Language</string>
 </resources>

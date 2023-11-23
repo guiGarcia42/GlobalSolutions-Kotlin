@@ -1,14 +1,19 @@
 package com.example.checkpoint3.ui.home
 
+import android.graphics.drawable.Icon
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.checkpoint3.R
 import com.example.checkpoint3.databinding.FragmentHomeBinding
 import com.example.checkpoint3.databinding.ItemHospitalBinding
 
 class HospitalAdapter(
     private val binding: FragmentHomeBinding,
+
     private val hospitalList: List<Hospital>
     ): RecyclerView.Adapter<HospitalAdapter.HospitalViewHolder>() {
 
@@ -17,6 +22,7 @@ class HospitalAdapter(
         val nome: TextView = binding.textView3
         val endereco: TextView = binding.textView2
         val distancia: TextView = binding.textView4
+        val btnIconeCoracao: ImageView = binding.iconeCoracao
 
     }
 
@@ -36,6 +42,11 @@ class HospitalAdapter(
         holder.nome.text = currentItem.name
         holder.endereco.text = currentItem.address
         holder.distancia.text = currentItem.distance
+
+        holder.btnIconeCoracao.setOnClickListener() {
+            it.findNavController().navigate(R.id.nav_dados_cadastrais)
+        }
+
     }
 }
 

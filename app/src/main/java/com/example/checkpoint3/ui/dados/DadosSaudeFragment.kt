@@ -23,7 +23,7 @@ class DadosSaudeFragment : Fragment() {
 
         val saveButton = binding.saveButton
         saveButton.setOnClickListener {
-            findNavController().navigate(R.id.nav_home)
+            findNavController().popBackStack(findNavController().graph.startDestinationId, false)
         }
 
         return rootView
