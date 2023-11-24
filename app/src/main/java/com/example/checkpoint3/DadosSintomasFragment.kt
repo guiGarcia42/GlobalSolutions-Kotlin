@@ -8,29 +8,28 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.checkpoint3.databinding.FragmentDadosSaudeBinding
-import com.example.checkpoint3.databinding.FragmentFilaBinding
+import com.example.checkpoint3.databinding.FragmentDadosSintomasBinding
 
-class FilaFragment : Fragment() {
+class DadosSintomasFragment : Fragment() {
 
-    private var _binding: FragmentFilaBinding? = null
+
+    private var _binding: FragmentDadosSintomasBinding? = null
     private val binding get() = _binding!!
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentFilaBinding.inflate(inflater, container, false)
-        val root = binding.root
+        _binding = FragmentDadosSintomasBinding.inflate(inflater, container, false)
+        val rootView = binding.root
 
-        val cancelarButton = binding.cancelarButton
-        cancelarButton.setOnClickListener {
-            findNavController().popBackStack(findNavController().graph.startDestinationId, false)
+        val nextButton = binding.nextButton
+        nextButton.setOnClickListener {
+            findNavController().navigate(R.id.nav_fila)
         }
 
-        return root
+        return rootView
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

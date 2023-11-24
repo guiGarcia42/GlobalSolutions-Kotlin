@@ -21,9 +21,9 @@ class DadosSaudeFragment : Fragment() {
         _binding = FragmentDadosSaudeBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
-        val saveButton = binding.saveButton
-        saveButton.setOnClickListener {
-            findNavController().popBackStack(findNavController().graph.startDestinationId, false)
+        val nextButton = binding.nextButton
+        nextButton.setOnClickListener {
+            findNavController().navigate(R.id.nav_dados_sintomas)
         }
 
         return rootView
