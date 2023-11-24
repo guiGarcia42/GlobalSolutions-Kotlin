@@ -9,7 +9,11 @@
         android:id="@+id/nav_home"
         android:name="com.example.checkpoint3.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_dados_cadastrais"
+            app:destination="@id/nav_dados_cadastrais" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_dados_cadastrais"
@@ -30,5 +34,23 @@
         android:id="@+id/nav_dados_saude"
         android:name="com.example.checkpoint3.ui.dados.DadosSaudeFragment"
         android:label="fragment_dados_saude"
-        tools:layout="@layout/fragment_dados_saude" />
+        tools:layout="@layout/fragment_dados_saude" >
+        <action
+            android:id="@+id/action_nav_dados_saude_to_dadosSintomasFragment"
+            app:destination="@id/nav_dados_sintomas" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_dados_sintomas"
+        android:name="com.example.checkpoint3.DadosSintomasFragment"
+        android:label="fragment_dados_sintomas"
+        tools:layout="@layout/fragment_dados_sintomas" >
+        <action
+            android:id="@+id/action_dadosSintomasFragment_to_filaFragment"
+            app:destination="@id/nav_fila" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fila"
+        android:name="com.example.checkpoint3.FilaFragment"
+        android:label="fragment_fila"
+        tools:layout="@layout/fragment_fila" />
 </navigation>
