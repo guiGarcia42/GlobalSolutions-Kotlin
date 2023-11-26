@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_dados_sintomas"
-        android:name="com.example.checkpoint3.DadosSintomasFragment"
+        android:name="com.example.checkpoint3.ui.dados.DadosSintomasFragment"
         android:label="fragment_dados_sintomas"
         tools:layout="@layout/fragment_dados_sintomas" >
         <action
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_fila"
-        android:name="com.example.checkpoint3.FilaFragment"
+        android:name="com.example.checkpoint3.ui.dados.FilaFragment"
         android:label="fragment_fila"
         tools:layout="@layout/fragment_fila" />
 </navigation>

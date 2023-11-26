@@ -1,5 +1,6 @@
 package com.example.checkpoint3.ui.home
 
+import android.content.Context
 import android.graphics.drawable.Icon
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -44,6 +45,12 @@ class HospitalAdapter(
         holder.distancia.text = currentItem.distance
 
         holder.btnIconeCoracao.setOnClickListener() {
+            val sharedPreferences = it.context.getSharedPreferences("dados_hospital", Context.MODE_PRIVATE)
+            val editor = sharedPreferences.edit()
+            editor.putString("nome", currentItem.name)
+            editor.putString("endereco", currentItem.address)
+            editor.apply()
+
             it.findNavController().navigate(R.id.nav_dados_cadastrais)
         }
 

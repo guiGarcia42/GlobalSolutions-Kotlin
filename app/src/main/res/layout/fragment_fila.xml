@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FilaFragment">
+    tools:context=".ui.dados.FilaFragment">
 
 
     <Button
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/numeroFila"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -82,10 +82,10 @@
         android:src="@drawable/baseline_health_and_safety_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/numeroFila" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/nomeHospital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/enderecoHospital"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -103,5 +103,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/nomeHospital" />
 </androidx.constraintlayout.widget.ConstraintLayout>
