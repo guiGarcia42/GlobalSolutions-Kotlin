@@ -7,6 +7,14 @@
 
     <style name="Theme.Checkpoint3" parent="Base.Theme.Checkpoint3" />
 
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/purple</item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/red</item>
+    </style>
+
     <style name="Theme.Checkpoint3.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

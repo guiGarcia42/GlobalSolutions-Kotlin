@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DadosSintomasFragment">
+    tools:context=".ui.dados.DadosSintomasFragment">
 
     <Button
         android:id="@+id/next_button"
@@ -56,37 +56,31 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBox1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dor de cabeça" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/checkBox2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Náusea" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/checkBox3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Febre" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBox4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dor de barriga" />
 
-            <CheckBox
-                android:id="@+id/checkBox2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox" />
-
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/outros"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"

@@ -22,6 +22,8 @@ class Start : AppCompatActivity() {
         binding = StartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         val startButton : Button = binding.button
         startButton.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)

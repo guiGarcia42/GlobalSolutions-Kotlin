@@ -56,19 +56,19 @@
             android:orientation="vertical">
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBox1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tem marca-passo?" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/checkBox2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Portador de necessidades especiais?" />
 
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/checkBox3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Idoso?" />
@@ -81,7 +81,7 @@
                 android:text="Possui alguma outra informação relevante sobre suas condições de saúde?" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/outros"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10dp"
