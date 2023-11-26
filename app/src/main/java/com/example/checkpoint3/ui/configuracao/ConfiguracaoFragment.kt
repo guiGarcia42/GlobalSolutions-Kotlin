@@ -2,6 +2,7 @@ package com.example.checkpoint3.ui.configuracao
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.checkpoint3.databinding.FragmentConfiguracaoBinding
+import java.util.Locale
 
 class ConfiguracaoFragment : Fragment() {
 
